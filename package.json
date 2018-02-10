@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack -p --progress",
     "storybook": "start-storybook -p 9009",
-    "build-demo": "build-storybook -c .storybook -o .out"
+    "build-demo": "build-storybook -c .storybook -o demo"
   },
   "keywords": [
     "react",
