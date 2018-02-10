@@ -1,5 +1,7 @@
 # AIR Progressbar
 
+[![npm](https://img.shields.io/npm/dm/air-progressbar.svg)](https://www.npmjs.com/package/air-progressbar#demo)
+
 Progress bars for React. Line shaped
 
 **Shortcuts**
