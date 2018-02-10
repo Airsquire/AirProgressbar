@@ -1,6 +1,6 @@
 {
   "name": "air-progressbar",
-  "version": "0.1.9",
+  "version": "1.0.0",
   "description": "Progressbar component for react",
   "scripts": {
     "build": "rm -rf ./lib && tsc",
@@ -26,10 +26,9 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "air-progressbar": "^0.1.9",
+    "air-progressbar": "^1.0.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-trix": "^0.2.2"
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.12",
