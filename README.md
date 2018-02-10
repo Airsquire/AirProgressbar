@@ -10,7 +10,7 @@ Progress bars for React. Line shaped
 **Shortcuts**
 
 * [How to install](#how-to-install)
-* [Demo](#demo) TBD
+* [Demo](https://airsquire.github.io/AirProgressbar/demo)
 
 
 ## Get started
