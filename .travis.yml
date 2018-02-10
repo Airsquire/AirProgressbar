@@ -18,3 +18,8 @@ before_install:
     fi
     npm install npm@8.x -g
     phantomjs --version
+
+scripts
+    - npm install codecov -g    
+after_success:
+    - codecov
