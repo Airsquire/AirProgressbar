@@ -4,7 +4,8 @@
   "description": "Progressbar component for react",
   "scripts": {
     "build": "webpack -p --progress",
-    "storybook": "start-storybook -p 9009"
+    "storybook": "start-storybook -p 9009",
+    "build-demo": "build-storybook -c .storybook -o .out"
   },
   "keywords": [
     "react",
