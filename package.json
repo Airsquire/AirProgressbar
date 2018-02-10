@@ -1,11 +1,14 @@
 {
   "name": "air-progressbar",
-  "version": "0.1.4",
+  "version": "0.1.9",
   "description": "Progressbar component for react",
   "scripts": {
-    "build": "webpack -p --progress",
+    "build": "rm -rf ./lib && tsc",
     "storybook": "start-storybook -p 9009",
-    "build-demo": "build-storybook -c .storybook -o demo"
+    "build-demo": "build-storybook -c .storybook -o demo",
+    "test": "jest",
+    "prepare": "yarn build",
+    "lint": "tslint -c tslint.json --project tsconfig.json"
   },
   "keywords": [
     "react",
@@ -14,7 +17,8 @@
     "progress",
     "progressbar"
   ],
-  "main": "buiid/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "author": "youyue@airsquire.co",
   "repository": {
     "type": "git",
@@ -22,19 +26,31 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "air-progressbar": "^0.1.9",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-trix": "^0.2.2"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.12",
     "@storybook/addon-knobs": "^3.3.12",
     "@storybook/react": "^3.3.12",
+    "@types/enzyme": "^3.1.8",
+    "@types/enzyme-adapter-react-16": "^1.0.1",
+    "@types/jest": "^22.1.2",
+    "@types/react": "^16.0.36",
+    "@types/react-dom": "^16.0.3",
     "@types/storybook__react": "^3.0.6",
     "awesome-typescript-loader": "^3.4.1",
     "babel-core": "6.26.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.2.2",
     "source-map-loader": "^0.2.3",
     "storybook": "^1.0.0",
     "tsconfig-paths-webpack-plugin": "^2.0.0",
-    "webpack": "^3.11.0"
+    "tslint": "^5.9.1",
+    "tslint-react": "^3.4.0",
+    "typescript": "^2.7.1"
   }
 }

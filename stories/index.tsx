@@ -1,9 +1,10 @@
 import * as React from "react"
 import { storiesOf } from "@storybook/react"
 import { withKnobs, number, select, color } from "@storybook/addon-knobs/react"
-import * as Progressbar from "../src"
+import { Line } from '../'
 
 const loadingBarStory = storiesOf("LoadingBar", module)
+
 loadingBarStory.addDecorator(withKnobs)
 loadingBarStory.add("default", () => {
   const percent = number("Loading percentage", 20)
@@ -21,7 +22,7 @@ loadingBarStory.add("default", () => {
     "round"
   )
   return (
-    <Progressbar.Line
+    <Line
       percent={percent}
       strokeWidth={strokeWidth}
       strokeColor={strokeColor}

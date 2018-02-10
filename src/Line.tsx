@@ -1,22 +1,20 @@
 import * as React from "react"
 
-interface LineProps {
-  percent?: number
-  strokeWidth?: number
-  strokeColor?: string
-  tailColor?: string
-  strokeLinecap?: "butt" | "round" | "square" | "inherit"
+export interface InterfaceLineProps {
+    percent: number
+    strokeWidth: number
+    strokeColor: string
+    tailColor: string
+    strokeLinecap: "butt" | "round" | "square" | "inherit"
 }
 
-interface LineStates {}
-
-class Line extends React.Component<LineProps, LineStates> {
-  static defaultProps = {
+class Line extends React.Component<InterfaceLineProps> {
+  private static defaultProps = {
     percent: 0,
-    strokeWidth: 1,
     strokeColor: "#2db7f5",
-    tailColor: "#D9D9D9",
-    strokeLinecap: "round"
+    strokeLinecap: "round",
+    strokeWidth: 1,
+    tailColor: "#D9D9D9"
   }
 
   render() {
@@ -57,5 +55,4 @@ class Line extends React.Component<LineProps, LineStates> {
     )
   }
 }
-
 export default Line

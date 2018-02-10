@@ -1,5 +1,4 @@
 const genDefaultConfig = require('@storybook/react/dist/server/config/defaults/webpack.config.js');
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = (baseConfig, env) => {
   const config = genDefaultConfig(baseConfig, env);
@@ -9,6 +8,5 @@ module.exports = (baseConfig, env) => {
     loader: require.resolve('awesome-typescript-loader')
   });
   config.resolve.extensions.push('.ts', '.tsx');
-  config.resolve.plugins = [new TsconfigPathsPlugin()]
   return config;
 };
