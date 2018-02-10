@@ -1,9 +1,9 @@
 {
   "name": "air-progressbar",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "Progressbar component for react",
   "scripts": {
-    "build": "webpack-dev-server --env.dev --hot --progress --colors --inline --profile --public",
+    "build": "webpack -p --progress",
     "storybook": "start-storybook -p 9009"
   },
   "keywords": [
@@ -13,8 +13,12 @@
     "progress",
     "progressbar"
   ],
-  "main": "index.js",
-  "author": "",
+  "main": "buiid/index.js",
+  "author": "youyue@airsquire.co",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Airsquire/AirProgressbar"
+  },
   "license": "Apache-2.0",
   "dependencies": {
     "react": "^16.2.0",
@@ -29,6 +33,7 @@
     "babel-core": "6.26.0",
     "source-map-loader": "^0.2.3",
     "storybook": "^1.0.0",
-    "tsconfig-paths-webpack-plugin": "^2.0.0"
+    "tsconfig-paths-webpack-plugin": "^2.0.0",
+    "webpack": "^3.11.0"
   }
 }
