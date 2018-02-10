@@ -2,6 +2,10 @@
   "name": "air-progressbar",
   "version": "0.1.0",
   "description": "Progressbar component for react",
+  "scripts": {
+    "build": "webpack-dev-server --env.dev --hot --progress --colors --inline --profile --public",
+    "storybook": "start-storybook -p 9009"
+  },
   "keywords": [
     "react",
     "react-component",
@@ -10,9 +14,21 @@
     "progressbar"
   ],
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
-  "license": "ISC"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.3.12",
+    "@storybook/addon-knobs": "^3.3.12",
+    "@storybook/react": "^3.3.12",
+    "@types/storybook__react": "^3.0.6",
+    "awesome-typescript-loader": "^3.4.1",
+    "babel-core": "6.26.0",
+    "source-map-loader": "^0.2.3",
+    "storybook": "^1.0.0",
+    "tsconfig-paths-webpack-plugin": "^2.0.0"
+  }
 }
