@@ -1,7 +1,7 @@
 # AIR Progressbar
 
 [![NPM version](http://img.shields.io/npm/v/air-progressbar.svg?style=flat-square)]((https://www.npmjs.com/package/air-progressbar))
-[![codecov](https://codecov.io/gh/AirSquire/AirProgressbar/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/Airsquire/AirProgressbart)
+[![codecov](https://codecov.io/gh/AirSquire/AirProgressbar/branch/master/graph/badge.svg?style=flat-square)](https://codecov.io/gh/Airsquire/AirProgressbar)
 [![npm](https://img.shields.io/npm/dm/air-progressbar.svg?style=flat-square)](https://www.npmjs.com/package/air-progressbar)
 [![gemnasium deps](http://img.shields.io/gemnasium/react-component/progress.svg?style=flat-square)](https://www.npmjs.com/package/air-progressbar)
 [![Build Status](https://travis-ci.org/Airsquire/AirProgressbar.svg?style=flat-square&branch=master)](https://travis-ci.org/Airsquire/AirProgressbar)
