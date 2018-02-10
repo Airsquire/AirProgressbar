@@ -23,7 +23,6 @@ class Line extends React.Component<InterfaceLineProps> {
       strokeDashoffset: `${100 - this.props.percent}px`,
       transition: "stroke-dashoffset 0.3s ease 0s, stroke 0.3s linear"
     }
-
     const center = this.props.strokeWidth / 2
     const right = 100 - this.props.strokeWidth / 2
     const pathString = `M ${

@@ -6,7 +6,7 @@
     "build": "rm -rf ./lib && tsc",
     "storybook": "start-storybook -p 9009",
     "build-demo": "build-storybook -c .storybook -o demo",
-    "test": "jest",
+    "test": "jest --coverage",
     "prepare": "yarn build",
     "lint": "tslint -c tslint.json --project tsconfig.json"
   },
@@ -24,9 +24,19 @@
     "type": "git",
     "url": "git+https://github.com/Airsquire/AirProgressbar"
   },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "/*.test.(ts|tsx|js)$"
+  },
   "license": "Apache-2.0",
   "dependencies": {
-    "air-progressbar": "^1.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
@@ -47,6 +57,7 @@
     "jest": "^22.2.2",
     "source-map-loader": "^0.2.3",
     "storybook": "^1.0.0",
+    "ts-jest": "^22.0.3",
     "tsconfig-paths-webpack-plugin": "^2.0.0",
     "tslint": "^5.9.1",
     "tslint-react": "^3.4.0",

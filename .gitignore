@@ -1,6 +1,10 @@
+build/
 
 # NPM
 node_modules/
 
 # vscode
 .vscode/
+
+#JEST
+coverage/
